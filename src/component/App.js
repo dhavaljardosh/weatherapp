@@ -10,7 +10,7 @@ export default () => {
   useEffect(() => {
     //Fetch Weather data
     const getWeatherData = async () => {
-      const key = "";
+      const key = "YOUR_WEATHER_KEY_HERE";
       const getData = await fetch(
         `http://api.openweathermap.org/data/2.5/find?lat=${latLng.lat}&lon=${latLng.lng}&cnt=1&appId=${key}`
       );
